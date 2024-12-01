@@ -1,0 +1,837 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>3-excel文件处理 | 爬虫教程</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../chapter3/04mysql數據庫.html" />
+    
+    
+    <link rel="prev" href="../chapter3/02csv文件處理.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.3"
+        data-chapter-title="3-excel文件处理"
+        data-filepath="chapter3/03excel文件处理.md"
+        data-basepath=".."
+        data-revision="Tue Jun 11 2019 18:44:31 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter1/00.html">
+            
+                
+                    <a href="../chapter1/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一章：网络请求
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="chapter1/01虛擬環境.html">
+            
+                
+                    <a href="../chapter1/01虛擬環境.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        1-虚拟环境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1/02爬蟲前奏.html">
+            
+                
+                    <a href="../chapter1/02爬蟲前奏.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        2-爬虫前奏
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="chapter1/03http協議和chrome瀏覽器.html">
+            
+                
+                    <a href="../chapter1/03http協議和chrome瀏覽器.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        3-http协议和chrome浏览器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chapter1/04urllib庫.html">
+            
+                
+                    <a href="../chapter1/04urllib庫.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        4-urllib库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="chapter1/05requests庫.html">
+            
+                
+                    <a href="../chapter1/05requests庫.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        5-requests库
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="chapter2/00.html">
+            
+                
+                    <a href="../chapter2/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二章：数据提取
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="chapter2/01xpath語法與lxml庫.html">
+            
+                
+                    <a href="../chapter2/01xpath語法與lxml庫.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        1.xpath语法与lxml库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="chapter2/02beautifulsoup語法.html">
+            
+                
+                    <a href="../chapter2/02beautifulsoup語法.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        2-BeautifulSoup4库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="chapter2/03正則表達式和re模塊.html">
+            
+                
+                    <a href="../chapter2/03正則表達式和re模塊.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        3-正则表达式和re模块
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="chapter3/00.html">
+            
+                
+                    <a href="../chapter3/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三章：数据存储
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="chapter3/01json文件處理.html">
+            
+                
+                    <a href="../chapter3/01json文件處理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        1-json文件处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="chapter3/02csv文件處理.html">
+            
+                
+                    <a href="../chapter3/02csv文件處理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        2-csv文件处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="chapter3/03excel文件處理.html">
+            
+                
+                    <a href="../chapter3/03excel文件處理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        3-excel文件处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="chapter3/04mysql數據庫.html">
+            
+                
+                    <a href="../chapter3/04mysql數據庫.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        4-MySQL数据库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="chapter3/05mongodb數據庫.html">
+            
+                
+                    <a href="../chapter3/05mongodb數據庫.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        5-MongoDB数据库
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="chapter4/00.html">
+            
+                
+                    <a href="../chapter4/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四章：爬虫进阶
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="chapter4/01多線程爬蟲.html">
+            
+                
+                    <a href="../chapter4/01多線程爬蟲.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        1-多线程爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="chapter4/02動態網頁爬蟲.html">
+            
+                
+                    <a href="../chapter4/02動態網頁爬蟲.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        2-动态网页爬虫
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="chapter4/03圖形驗證碼識別.html">
+            
+                
+                    <a href="../chapter4/03圖形驗證碼識別.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        3-图形验证码识别
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="chapter4/04字體反爬.html">
+            
+                
+                    <a href="../chapter4/04字體反爬.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        4-字体反爬
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="chapter5/00.html">
+            
+                
+                    <a href="../chapter5/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五章：Scrapy框架
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="chapter5/01scrapy框架架構.html">
+            
+                
+                    <a href="../chapter5/01scrapy框架架構.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        1-框架架构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="chapter5/02快速入門.html">
+            
+                
+                    <a href="../chapter5/02快速入門.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        2-快速入门
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="chapter5/03crawlspider爬蟲.html">
+            
+                
+                    <a href="../chapter5/03crawlspider爬蟲.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        3-CrawlSpider
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="chapter5/04scrapyshell.html">
+            
+                
+                    <a href="../chapter5/04scrapyshell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        4-ScrapyShell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="chapter5/05request和response對象.html">
+            
+                
+                    <a href="../chapter5/05request和response對象.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        5-Request和Response对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="chapter5/06下載文件和圖片.html">
+            
+                
+                    <a href="../chapter5/06下載文件和圖片.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        6-下载文件和图片
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="chapter5/07下載中間件.html">
+            
+                
+                    <a href="../chapter5/07下載中間件.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        7-下载中间件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="chapter5/08settings配置信息.html">
+            
+                
+                    <a href="../chapter5/08settings配置信息.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        8-settings配置信息
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="chapter6/00.html">
+            
+                
+                    <a href="../chapter6/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第七章：Scrapy-Redis分布式组件
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="chapter6/01redis數據庫介紹.html">
+            
+                
+                    <a href="../chapter6/01redis數據庫介紹.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        1-redis数据库介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="chapter6/02scrapy-redis組件介紹.html">
+            
+                
+                    <a href="../chapter6/02scrapy-redis組件介紹.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        2-Scrapy-Redis组件介绍
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >爬虫教程</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="excel&#x6587;&#x4EF6;&#x5904;&#x7406;">Excel&#x6587;&#x4EF6;&#x5904;&#x7406;</h1>
+<p>&#x5728;&#x722C;&#x866B;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4E3B;&#x8981;&#x5173;&#x6CE8;<code>Excel</code>&#x6587;&#x4EF6;&#x7684;&#x8BFB;&#x5199;&#xFF0C;&#x4E0D;&#x4F1A;&#x8FC7;&#x591A;&#x5173;&#x5FC3;<code>Excel</code>&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x6837;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x8BFB;&#x5199;<code>Excel</code>&#x6587;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x501F;&#x52A9;&#x5230;&#x4E24;&#x4E2A;&#x5E93;<code>xlrd</code>&#x548C;<code>xlwt</code>&#xFF0C;&#x5176;&#x4E2D;<code>xlrd</code>&#x662F;&#x7528;&#x4E8E;&#x8BFB;&#x7684;&#xFF0C;<code>xlwt</code>&#x662F;&#x7528;&#x4E8E;&#x5199;&#x7684;&#xFF0C;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>pip install xlrd
+pip install xlwt
+</code></pre><h2 id="&#x8BFB;&#x53D6;excel&#x6587;&#x4EF6;&#xFF1A;">&#x8BFB;&#x53D6;Excel&#x6587;&#x4EF6;&#xFF1A;</h2>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> xlrd
+
+workbook = xlrd.open_workbook(<span class="hljs-string">&quot;&#x6210;&#x7EE9;&#x8868;.xlsx&quot;</span>)
+sheet_names = workbook.sheet_names()
+print(sheet_names) <span class="hljs-comment">#&#x6253;&#x5370;&#x6240;&#x6709;&#x7684;sheet&#x7684;&#x540D;&#x79F0;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;sheet&#xFF1A;">&#x83B7;&#x53D6;<code>Sheet</code>&#xFF1A;</h3>
+<p>&#x4E00;&#x4E2A;<code>Excel</code>&#x4E2D;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;<code>Sheet</code>&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#x6765;&#x83B7;&#x53D6;&#x60F3;&#x8981;&#x7684;<code>Sheet</code>&#x4FE1;&#x606F;&#xFF1A;  </p>
+<ol>
+<li><code>sheet_names</code>&#xFF1A;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;<code>sheet</code>&#x7684;&#x540D;&#x5B57;&#x3002;  </li>
+<li><code>sheet_by_index</code>&#xFF1A;&#x6839;&#x636E;&#x7D22;&#x5F15;&#x83B7;&#x53D6;<code>sheet</code>&#x5BF9;&#x8C61;&#x3002;  </li>
+<li><code>sheet_by_name</code>&#xFF1A;&#x6839;&#x636E;&#x540D;&#x5B57;&#x83B7;&#x53D6;<code>sheet</code>&#x5BF9;&#x8C61;&#x3002;  </li>
+<li><code>sheets</code>&#xFF1A;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;<code>sheet</code>&#x5BF9;&#x8C61;&#x3002;  </li>
+<li><code>sheet.nrows</code>&#xFF1A;&#x8FD9;&#x4E2A;<code>sheet</code>&#x4E2D;&#x7684;&#x884C;&#x6570;&#x3002;  </li>
+<li><code>sheet.ncols</code>&#xFF1A;&#x8FD9;&#x4E2A;<code>sheet</code>&#x4E2D;&#x7684;&#x5217;&#x6570;&#x3002;</li>
+</ol>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> xlrd
+
+workbook = xlrd.open_workbook(<span class="hljs-string">&quot;&#x6210;&#x7EE9;&#x8868;.xlsx&quot;</span>)
+sheet_names = workbook.sheet_names()
+print(sheet_names) <span class="hljs-comment">#&#x6253;&#x5370;&#x6240;&#x6709;&#x7684;sheet&#x7684;&#x540D;&#x79F0;</span>
+
+<span class="hljs-comment"># &#x6839;&#x636E;&#x7D22;&#x5F15;&#x83B7;&#x53D6;sheet</span>
+sheet = workbook.sheet_by_index(<span class="hljs-number">0</span>)
+print(sheet.name)
+
+<span class="hljs-comment"># &#x6839;&#x636E;&#x540D;&#x79F0;&#x83B7;&#x53D6;sheet</span>
+sheet = workbook.sheet_by_name(<span class="hljs-string">&quot;1&#x73ED;&#x6210;&#x7EE9;&quot;</span>)
+print(sheet.name)
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;sheet&#x5BF9;&#x8C61;</span>
+sheets = workbook.sheets()
+<span class="hljs-keyword">for</span> sheet <span class="hljs-keyword">in</span> sheets:
+    print(sheet.name)
+
+<span class="hljs-comment"># &#x83B7;&#x53D6;&#x8FD9;&#x4E2A;sheet&#x4E2D;&#x7684;&#x884C;&#x6570;&#x548C;&#x5217;&#x6570;</span>
+nrows = sheet.nrows
+ncols = sheet.ncols
+</code></pre>
+<h3 id="&#x83B7;&#x53D6;cell&#x53CA;&#x5176;&#x5C5E;&#x6027;&#xFF1A;">&#x83B7;&#x53D6;Cell&#x53CA;&#x5176;&#x5C5E;&#x6027;&#xFF1A;</h3>
+<p>&#x6BCF;&#x4E2A;<code>Cell</code>&#x4EE3;&#x8868;&#x7684;&#x662F;&#x8868;&#x683C;&#x4E2D;&#x7684;&#x4E00;&#x683C;&#x3002;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x83B7;&#x53D6;&#x60F3;&#x8981;&#x7684;<code>cell</code>&#xFF1A;  </p>
+<ol>
+<li><code>sheet.cell(row,col)</code>&#xFF1A;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x884C;&#x548C;&#x5217;&#x7684;<code>cell</code>&#x5BF9;&#x8C61;&#x3002;  </li>
+<li><code>sheet.row_slice(row,start_col,end_col)</code>&#xFF1A;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x884C;&#x7684;&#x67D0;&#x51E0;&#x5217;&#x7684;cell&#x5BF9;&#x8C61;&#x3002;  </li>
+<li><code>sheet.col_slice(col,start_row,end_row)</code>&#xFF1A;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5217;&#x7684;&#x67D0;&#x51E0;&#x884C;&#x7684;cell&#x5BF9;&#x8C61;&#x3002;  </li>
+<li><code>sheet.cell_value(row,col)</code>&#xFF1A;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x884C;&#x548C;&#x5217;&#x7684;&#x503C;&#x3002;  </li>
+<li><code>sheet.row_values(row,start_col,end_col)</code>&#xFF1A;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x884C;&#x7684;&#x67D0;&#x51E0;&#x5217;&#x7684;&#x503C;&#x3002;  </li>
+<li><code>sheet.col_values(col,start_row,end_row)</code>&#xFF1A;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5217;&#x7684;&#x67D0;&#x51E0;&#x884C;&#x7684;&#x503C;&#x3002;</li>
+</ol>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python">sheet = workbook.sheet_by_index(<span class="hljs-number">0</span>)
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;cell&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7684;cell&#x5BF9;&#x8C61;</span>
+<span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> range(sheet.ncols):
+    <span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> range(sheet.nrows):
+        print(sheet.cell(row,col))
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;row_slice&#x83B7;&#x53D6;&#x7B2C;0&#x884C;&#x7684;1-2&#x5217;&#x7684;cell&#x5BF9;&#x8C61;</span>
+cells = sheet.row_slice(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)
+<span class="hljs-comment"># &#x4F7F;&#x7528;col_slice&#x83B7;&#x53D6;&#x7B2C;0&#x5217;&#x7684;1-2&#x884C;&#x7684;cell&#x5BF9;&#x8C61;</span>
+cells = sheet.col_slice(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>)
+</code></pre>
+<p>&#x53E6;&#x5916;&#x5728;<code>Cell</code>&#x4E0A;&#x9762;&#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x5C5E;&#x6027;&#xFF1A;  </p>
+<ol>
+<li><code>cell.value</code>&#xFF1A;&#x8FD9;&#x4E2A;<code>cell</code>&#x91CC;&#x9762;&#x7684;&#x503C;&#x3002;  </li>
+<li><code>cell.ctype</code>&#xFF1A;&#x8FD9;&#x4E2A;<code>cell</code>&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</li>
+</ol>
+<h3 id="cell&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;">Cell&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1A;</h3>
+<ol>
+<li><code>xlrd.XL_CELL_TEXT&#xFF08;Text&#xFF09;</code>&#xFF1A;&#x6587;&#x672C;&#x7C7B;&#x578B;&#x3002;</li>
+<li><code>xlrd.XL_CELL_NUMBER&#xFF08;Number&#xFF09;</code>&#xFF1A;&#x6570;&#x503C;&#x7C7B;&#x578B;&#x3002;</li>
+<li><code>xlrd.XL_CELL_DATE&#xFF08;Date&#xFF09;</code>&#xFF1A;&#x65E5;&#x671F;&#x65F6;&#x95F4;&#x7C7B;&#x578B;&#x3002;</li>
+<li><code>xlrd.XL_CELL_BOOLEAN&#xFF08;Bool&#xFF09;</code>&#xFF1A;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x3002;</li>
+<li><code>xlrd.XL_CELL_BLANK</code>&#xFF1A;&#x7A7A;&#x767D;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</li>
+</ol>
+<hr>
+<h2 id="&#x5199;&#x5165;excel&#xFF1A;">&#x5199;&#x5165;Excel&#xFF1A;</h2>
+<p>&#x5199;&#x5165;<code>Excel</code>&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;  </p>
+<ol>
+<li>&#x5BFC;&#x5165;<code>xlwt</code>&#x6A21;&#x5757;&#x3002;  </li>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>Workbook</code>&#x5BF9;&#x8C61;&#x3002;  </li>
+<li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>Sheet</code>&#x5BF9;&#x8C61;&#x3002;  </li>
+<li>&#x4F7F;&#x7528;<code>sheet.write(row,col,data)</code>&#x65B9;&#x6CD5;&#x628A;&#x6570;&#x636E;&#x5199;&#x5165;&#x5230;<code>Sheet</code>&#x4E0B;&#x6307;&#x5B9A;&#x884C;&#x548C;&#x5217;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5728;&#x539F;&#x6765;<code>workbook</code>&#x5BF9;&#x8C61;&#x4E0A;&#x6DFB;&#x52A0;&#x65B0;&#x7684;<code>cell</code>&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x8C03;&#x7528;<code>put_cell</code>&#x6765;&#x6DFB;&#x52A0;&#x3002;  </li>
+<li>&#x4FDD;&#x5B58;&#x6210;<code>Excel</code>&#x6587;&#x4EF6;&#x3002;</li>
+</ol>
+<p>&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> xlwt
+<span class="hljs-keyword">import</span> random
+
+workbook = xlwt.Workbook(encoding=<span class="hljs-string">&apos;utf-8&apos;</span>)
+sheet = workbook.add_sheet(<span class="hljs-string">&quot;&#x6210;&#x7EE9;&#x8868;&quot;</span>)
+<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x8868;&#x5934;</span>
+fields = [<span class="hljs-string">&apos;&#x6570;&#x5B66;&apos;</span>,<span class="hljs-string">&apos;&#x82F1;&#x8BED;&apos;</span>,<span class="hljs-string">&apos;&#x8BED;&#x6587;&apos;</span>]
+<span class="hljs-keyword">for</span> index,field <span class="hljs-keyword">in</span> enumerate(fields):
+    sheet.write(<span class="hljs-number">0</span>,index,field)
+
+<span class="hljs-comment"># &#x968F;&#x673A;&#x7684;&#x6DFB;&#x52A0;&#x6210;&#x7EE9;</span>
+<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,<span class="hljs-number">10</span>):
+    <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> range(<span class="hljs-number">3</span>):
+        grade = random.randint(<span class="hljs-number">0</span>,<span class="hljs-number">100</span>)
+        sheet.write(row,col,grade)
+
+workbook.save(<span class="hljs-string">&quot;abc.xls&quot;</span>)
+</code></pre>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x5728;&#x539F;&#x6765;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x7684;<code>Excel</code>&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x884C;&#x6216;&#x8005;&#x65B0;&#x7684;&#x5217;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x91C7;&#x7528;<code>put_cell(row,col,type,value,xf_index)</code>&#x6765;&#x6DFB;&#x52A0;&#x8FDB;&#x53BB;&#xFF0C;&#x6700;&#x540E;&#x518D;&#x653E;&#x5230;<code>xlwt</code>&#x521B;&#x5EFA;&#x7684;<code>workbook</code>&#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x4FDD;&#x5B58;&#x8FDB;&#x53BB;&#x3002;&#x793A;&#x4F8B;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> xlrd
+<span class="hljs-keyword">import</span> xlwt
+
+workbook = xlrd.open_workbook(<span class="hljs-string">&quot;&#x6210;&#x7EE9;&#x8868;.xlsx&quot;</span>)
+rsheet = workbook.sheet_by_index(<span class="hljs-number">0</span>)
+
+<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x603B;&#x5206;&#x6210;&#x7EE9;</span>
+rsheet.put_cell(<span class="hljs-number">0</span>,<span class="hljs-number">4</span>,xlrd.XL_CELL_TEXT,<span class="hljs-string">&quot;&#x603B;&#x5206;&quot;</span>,<span class="hljs-keyword">None</span>)
+<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,rsheet.nrows):
+    grade = sum(rsheet.row_values(row,<span class="hljs-number">1</span>,<span class="hljs-number">4</span>))
+    rsheet.put_cell(row,<span class="hljs-number">4</span>,xlrd.XL_CELL_NUMBER,grade,<span class="hljs-keyword">None</span>)
+
+<span class="hljs-comment"># &#x6DFB;&#x52A0;&#x6BCF;&#x4E2A;&#x79D1;&#x76EE;&#x7684;&#x5E73;&#x5747;&#x6210;&#x7EE9;</span>
+total_rows = rsheet.nrows
+total_cols = rsheet.ncols
+<span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> range(<span class="hljs-number">1</span>,total_cols):
+    grades = rsheet.col_values(col,<span class="hljs-number">1</span>,total_rows)
+    avg_grade = sum(grades)/len(grades)
+    print(type(avg_grade))
+    rsheet.put_cell(total_rows,col,xlrd.XL_CELL_NUMBER,avg_grade,<span class="hljs-keyword">None</span>)
+
+<span class="hljs-comment"># &#x91CD;&#x65B0;&#x5199;&#x5165;&#x4E00;&#x4E2A;&#x65B0;&#x7684;excel&#x6587;&#x4EF6;&#x6570;&#x636E;</span>
+wwb = xlwt.Workbook(encoding=<span class="hljs-string">&quot;utf-8&quot;</span>)
+wsheet = wwb.add_sheet(<span class="hljs-string">&quot;1&#x73ED;&#x5B66;&#x751F;&#x6210;&#x7EE9;&quot;</span>)
+<span class="hljs-keyword">for</span> row <span class="hljs-keyword">in</span> range(rsheet.nrows):
+    <span class="hljs-keyword">for</span> col <span class="hljs-keyword">in</span> range(rsheet.ncols):
+        wsheet.write(row,col,rsheet.cell_value(row,col))
+
+wwb.save(<span class="hljs-string">&quot;abc.xls&quot;</span>)
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../chapter3/02csv文件處理.html" class="navigation navigation-prev " aria-label="Previous page: 2-csv文件处理"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../chapter3/04mysql數據庫.html" class="navigation navigation-next " aria-label="Next page: 4-MySQL数据库"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -26,3 +26,21 @@ pip list --outdated | ForEach-Object {pip install --upgrade ($_.Split(' ')[0])}
 pip install --upgrade 包名
 ```
 
+## requirements.txt
+
+### 產生 requirements.txt
+
+產生類似package.json的檔案，用來記錄專案所需的套件
+
+```shell
+pip freeze > requirements.txt
+```
+
+### 使用
+
+當clone新專案可以使用以下指令安裝所需套件
+
+```shell
+pip install -r requirements.txt
+```
+
