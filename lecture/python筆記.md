@@ -16,7 +16,7 @@ pip list --outdated
 
 - 更新所有過期的包，網路上說的很多都已經過期了，下面是最新的指令
 
-```shell
+```shellcd
 pip list --outdated | ForEach-Object {pip install --upgrade ($_.Split(' ')[0])}
 ```
 
